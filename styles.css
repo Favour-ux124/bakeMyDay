@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-image {
+  width: 100%; /* or specify a fixed width */
+  height: 1000px; /* or specify a fixed height */
+  object-fit: cover; /* maintain aspect ratio */
+  border-radius: 0; /* optional: rounded corners */
+}
+.header-image {
+  animation: slideIn 2s;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.about {
+    padding: 2em;
+  }
+  .about-image{
+width: 100%;
+height: 1000px;
+object-fit: cover;
+  }
+  .about-image {
+    animation: zoomIn 2s;
+  }
+  
+  @keyframes zoomIn {
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
+  }
+  
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 10px;
+}
+
+.project {
+    background-color: bisque;
+    padding: 1em;
+    border: 1px solid #ddd;
+object-fit: cover;
+text-align: center;
+
+
+
+}
+
+.project img {
+    width: 200%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.contact {
+    padding: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: rgb(142, 84, 8);
+    color: #fff;
+    padding: 1em 2em;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgb(142, 84, 8);
+}
+
+/* Default styles */
+.container {
+  width: 80%;
+  margin: 40px auto;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 70%;
+    margin: 30px auto;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1025px) {
+  .container {
+    width: 60%;
+    margin: 40px auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+      
