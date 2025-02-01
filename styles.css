@@ -45,6 +45,9 @@ nav a {
   color: #fff;
 }
 
+
+
+}
 .about {
     padding: 2em;
   }
@@ -55,6 +58,8 @@ object-fit: cover;
   }
   .about-image {
     animation: zoomIn 2s;
+    width: 100%;
+ 
   }
   
   @keyframes zoomIn {
@@ -82,9 +87,12 @@ text-align: center;
 }
 
 .project img {
-    width: 200%;
-    height: 450px;
+    max-width:  800px;
+    height: auto;
     object-fit: cover;
+    display: block;
+    width: 100%;
+
 }
 
 .contact {
@@ -120,7 +128,15 @@ button:hover {
 .container {
   width: 80%;
   margin: 40px auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
 }
+
+
+
+
 
 /* Mobile styles */
 @media only screen and (max-width: 768px) {
